@@ -1,0 +1,297 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Lessons from Building an Accessible WordPress Theme</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20130813" />
+<meta name="author" content="David A. Kennedy" />
+<meta name="company" content="Rock Creek Strategic Marketing" />
+<!-- configuration parameters -->
+<meta name="zenView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,400,700,600' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="ui/zen/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/zen/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/zen/print.css" type="text/css" media="print" id="slidePrint" />
+<!-- S5 JS -->
+<script src="ui/zen/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<h1>WordCamp Lancaster | March 1, 2014</h1>
+<h2>Lessons from Building an Accessible WordPress Theme</h2>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+<h1>Lessons from Building an Accessible WordPress Theme</h1>
+<h2>You can Build an Accessible Theme Too</h2>
+<h3>David A. Kennedy</h3>
+<p>Front End Developer/Accessibility Analyst | Rock Creek Strategic Marketing</p>
+</div>
+
+<div class="slide">
+<h1>Hello!</h1>
+<h2>I'm Dave</h2>
+<p>I try to make the web a more accessible place.</p>
+<ul>
+<li>I like clean code, open source, CrossFit and peanut butter and jelly sandwiches.
+<li>I worked as an Online Communications Manager for The Arc, a national nonprofit that serves people with disabilities.</li>
+<li>I use to be a journalist and still love writing.</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Basically</h1>
+<p style="text-align:center;">I <img src="img/heart-l.jpg" alt="love" /> accessibility.</p>
+</div>
+
+<div class="slide">
+<h1>Where We're Headed?</h1>
+<ul>
+<li>What is web accessibility?</li>
+<li>Why it's important?</li>
+<li>Accessible Zen</li>
+<li>A few lessons along the way...</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>What is Web Accessibility?</h1>
+<p>Definitions vary</p>
+<blockquote>The practice of making websites and applications<br />usable by people of all abilities.</blockquote>
+</div>
+
+<div class="slide">
+<h1>What is Web Accessibility?</h1>
+<p>WordPress like this one</p>
+<blockquote>Accessibility is the degree to which a product, device, service, or environment is available to as many people as possible.</blockquote><em><a href="http://www.icdri.org/CynthiaW/cynthia_d.htm">Cynthia Waddell</a></em><br>
+<small><a href="http://www.icdri.org/CynthiaW/cynthia_d.htm">http://www.icdri.org/CynthiaW/cynthia_d.htm</a></small>
+</div>
+
+<div class="slide">
+<h1>Why it's important?</h1>
+<p>Almost <a href="http://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html">one in five Americans have a disability</a>, according to the United States Census Bureau. Many of those disabilities, such as vision problems or mobility issues, can impact how people use the web.</p>
+
+<small><a href="http://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html">http://www.census.gov/newsroom/releases/archives/miscellaneous/cb12-134.html</a></small>
+</div>
+
+<div class="slide">
+<h1>Why it's important?</h1>
+<p>Accessibility can drive user-driven projects with better designs, easier to understand code, plus code that's more testable and secure. When you create accessible projects, they can impact other areas.</p>
+</div>
+
+<div class="slide">
+<h1>Examples</h1>
+<ul>
+	<li>A skip link doesn't just help people with disabilities, <em>but keyboard users too</em></li>
+	<li>Fonts set in relative units help in responsive design <em>and people who resize text</em></li>
+	<li>Well structured HTML helps screen readrs parse content <em>and search engines find your content</em></li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Accessible Zen</h1>
+<img src="img/screenshot.png" alt="Screenshot of Accessible Zen home page" class="aligncenter" />
+<p style="text-align: center;"><a href="http://wordpress.org/themes/accessible-zen/">Accessible Zen</a>, the inspiration for this talk.</p>
+</div>
+
+<div class="slide">
+<h1>1. Keep Your Goal in Mind</h1>
+<p>My number one goal was to build a simple, accessible WordPress theme. That was hard.</p>
+</div>
+
+<div class="slide">
+<h1>1. Keep Your Goal in Mind</h1>
+<p>I followed a master. I looked to Leo Babauta of <a href="http://zenhabits.net/theme/">Zen Habits for inspiration</a>.</p>
+<small><a href="http://zenhabits.net/theme/">http://zenhabits.net/theme/</a></small>
+</div>
+
+<div class="slide">
+<h1>1. Keep Your Goal in Mind</h1>
+<p style="text-align:center;">If you <img src="img/heart-m.jpg" alt="love" /> your goal, stick with it.</p>
+</div>
+
+<div class="slide">
+<h1>2. Good Accessibility is Undetectable</h1>
+<p>I kept things modern, but still kept "accessible" as part of the name. Oh, and Accessible Zen isn't that much different from <a href="https://github.com/automattic/_s/">Underscores</a>.</p>
+<small><a href="https://github.com/automattic/_s/">https://github.com/automattic/_s</a></small>
+</div>
+
+<div class="slide">
+<h1>2. Good Accessibility is Undetectable</h1>
+<p>When I look at the final product, I can't <strong>see</strong> what makes it accessible on the surface.</p>
+</div>
+
+<div class="slide">
+<h1>2. Good Accessibility is Undetectable</h1>
+<p style="text-align:center;"><img src="img/heart-m.jpg" alt="love" /> your starter theme of choice, and use it.</p>
+</div>
+
+<div class="slide">
+<h1>3. Small Details Make a Big Difference</h1>
+<p>Obsess over them. A few examples:</p>
+</div>
+
+<div class="slide">
+<h1>3. Small Details Make a Big Difference</h1>
+<p>Start with the basics.</p>
+<li><a href="http://underscores.me/">Starter theme: Underscores</a></li>
+<li><a href="http://wordpress.org/themes/twentythirteen">Core theme: Twenty Thirteen</a></li>
+<li><a href="https://github.com/RRWD/accessible-twenty-eleven-theme">Child theme: Accessible Twenty Eleven</a></li>
+<li><a href="http://wordpress.org/themes/accessible-onetwo">Child theme: Accessible One Two</a></li>
+<li><a href="http://wordpress.org/themes/blaskan">Custom theme: Blaskan</a></li>
+<li><a href="https://github.com/davidakennedy/accessible-zen">Custom theme: Accessible Zen</a></li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>3. Small Details Make a Big Difference</h1>
+<p>Color matters. High contrast helps everyone.</p>
+<ul>
+<li>Text and images of text have a contrast ratio of at least 4.5:1</li>
+<li>Large text (over 18 point or 14 point bold) has a contrast ratio of at least 3:1</li>
+</ul>
+<p>Choose wisely:</p>
+<ul>
+<li><a href="http://accessibility.oit.ncsu.edu/tools/color-contrast/index.php">Color Palette Accessibility Checker</a></li>
+<li><a href="http://0to255.com/">0 to 255</a></li>
+<li><a href="http://accessibility.oit.ncsu.edu/tools/color-contrast/accessible-color-palette.php?&colors=333333,666666,CCCCCC,FFFFFF,d70f62,03748A&main=FFFFFF&level=AA">The Color Palette for this Talk</a></li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>3. Small Details Make a Big Difference</h1>
+<p>Skip nav links are awesome. I almost didn't put one in.</p>
+</div>
+
+<div class="slide">
+<h1>3. Small Details Make a Big Difference</h1>
+<p>Keep the underline on links and define focus styles. I went with a dotted border and a "depressed" effect on click to highlight links.</p>
+</div>
+
+<div class="slide">
+<h1>3. Small Details Make a Big Difference</h1>
+<p>I decided to display my titles <strong>with</strong> my "Read more" links.</p>
+</div>
+
+<div class="slide">
+<h1>3. Small Details Make a Big Difference</h1>
+<p style="text-align:center;">Small stuff needs <img src="img/heart-s.jpg" alt="love" /> too.</p>
+</div>
+
+<div class="slide">
+<h1>4. Recognize what You're Doing</h1>
+<p>You're making something!</p>
+</div>
+
+<div class="slide">
+<h1>4. Recognize what You're Doing</h1>
+<blockquote><p><a href="https://twitter.com/DavidAKennedy">@DavidAKennedy</a> <a href="https://twitter.com/steveofmaine">@steveofmaine</a> Thank you. SO far, I&#39;m loving this one!!!</p>&mdash; Shane Jackson (@jack728) <a href="https://twitter.com/jack728/statuses/351753432673165313">July 1, 2013</a></blockquote>
+</div>
+
+<div class="slide">
+<h1>4. Recognize what You're Doing</h1>
+<p style="text-align:center;">Find someone who <img src="img/heart-m.jpg" alt="loves" /> your work.</p>
+</div>
+
+<div class="slide">
+<h1>Wait a Minute!</h1>
+<p>You haven't talk a lot about WordPress? Or accessibility...</p>
+</div>
+
+<div class="slide">
+<h1>Mostly True</h1>
+<p>But there's more...</p>
+</div>
+
+<div class="slide">
+<h1>Where do we want to be with Accessibility?</h1>
+<img src="img/accessible-stairs.jpg" class="leader" alt="A set of stairs that combine stairs and a wheelchair ramp">
+</div>
+
+<div class="slide">
+<h1>Three Areas of Impact</h1>
+<ul>
+<li class="incremental">Decisions</li>
+<li class="incremental">People</li>
+<li class="incremental">Details</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>1. Decisions</h1>
+<p>These are usually strategy-related usually. Sometimes, points of no return.</p>
+<p><strong>Example</strong>: Making a "separate, accessible" website.</p>
+</div>
+
+<div class="slide">
+<h1>2. People</h1>
+<p>What if they don't know?</p>
+<p><strong>Example</strong>: A developer makes a click-based interaction that closes a modal with a <code>&lt;a href=&quot;#&quot;&gt;Fake Button&lt;/a&gt;</code> instead of a <code>&lt;button&gt;Real Button&lt;/button&gt;</code></p>
+</div>
+
+<div class="slide">
+<h1>3. Details</h1>
+<p>Hi, my name is minutia.</p>
+<p><strong>Example</strong>: Ensuring your colors are high contrast enough for a wide variety of people.</p>
+</div>
+
+<div class="slide">
+<h1>But Wait...</h1>
+<p>All of these can be one in the same. <strong>Yes</strong>.</p>
+</div>
+
+<div class="slide">
+<h1>What Do We Do About It?</h1>
+<p>Ask good questions.</p>
+</div>
+
+<div class="slide">
+<h1>Everyone has to Know One Thing</h1>
+<p><blockquote>What makes something simple or complex? It's not the number of dials or controls or how many features it has: It is whether the person using the device has a good conceptual model of how it operates.</blockquote> -Donald Norman</p>
+</div>
+
+<div class="slide">
+<h1>Everyone has to Know One Thing</h1>
+<p>How does it work?</p>
+</div>
+
+<div class="slide">
+<h1>Help Us Help You!</h1>
+<ul>
+<li>Help WordPress be Accessible: <a href="http://make.wordpress.org/accessibility/">Make WordPress Accessibility Group</a></li>
+<li>Contribute to an accessible starter theme: <a href="https://github.com/Automattic/_s">Underscores</a></li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>You're Awesome!</h1>
+<ul class="alignleft" style="width: 45%;">
+<li>Website: <a href="http://davidakennedy.com">davidakennedy.com</a></li>
+<li>Talk: <a href="http://davidakennedy.github.io/wclc2014/">http://davidakennedy.github.io/wclc2014/</a></li>
+<li>Twitter: <a href="http://twitter.com/davidakennedy">@DavidAKennedy</a></li>
+<li>Theme: <a href="http://wordpress.org/themes/accessible-zen">http://wordpress.org/themes/accessible-zen</a></li>
+</ul>
+<img src="img/heart-l.jpg" alt="Love you, audience!" class="alignright" />
+</div>
+
+</div>
+
+</body>
+</html>
