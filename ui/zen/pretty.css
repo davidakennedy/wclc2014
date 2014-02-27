@@ -8,10 +8,11 @@ body {background: #fff; color: #333; font-family: 'Open Sans', Verdana, Geneva, 
 h1, h2, h3, h4 {color: #d70f62; font-size: 100%; margin: 0; padding: 0; font-weight: 600;}
 ul, pre {margin: 0; line-height: 1em;}
 html, body {margin: 0; padding: 0;}
+img {max-width:100%;}
 
 blockquote, q {color: #666; font-style: italic;}
 blockquote {padding: 0 2em 0.5em; margin: 0 1.5em 0.5em; text-align: center; font-size: 1em;}
-blockquote p {margin: 0;}
+// blockquote p {margin: 0;}
 blockquote i {font-style: normal;}
 blockquote b {display: block; margin-top: 0.5em; font-weight: normal; font-size: smaller; font-style: normal;}
 blockquote b i {font-style: italic;}
@@ -36,9 +37,10 @@ div#footer { border-top: 1px solid #ccc; font-size: 0.5em; font-weight: bold; pa
 
 div.long {font-size: 0.75em;}
 .slide h1 {position: absolute; top: 0.7em; left: 0; z-index: 1;
-  margin: 0; padding: 0.3em 0 0 50px; white-space: nowrap;
-  font: bold 150%/1em; text-transform: capitalize;}
+  margin: 0; padding: 0.3em 0 0 4.25%; white-space: nowrap;
+  font: bold 150%/1 'Open Sans', Verdana, Geneva, sans-serif; text-transform: capitalize;}
 .slide h3 {font-size: 130%;}
+.slide p img {vertical-align:middle;}
 h1 abbr {font-variant: small-caps;}
 
 div#controls {position: absolute; left: 50%; bottom: 0;
@@ -57,10 +59,13 @@ div#controls form {position: absolute; bottom: 0; right: 0; width: 100%;
 #slide0 {padding-top: 3.5em; font-size: 90%;}
 #slide0 h1 {position: static; margin: 1em 0 0; padding: 0;
    font: bold 2em 'Open Sans', Verdana, Geneva, sans-serif; white-space: normal;
-   background: transparent;}
-#slide0 h2 {font: bold italic 1em 'Open Sans', Verdana, Geneva, sans-serif; margin: 0.25em;}
-#slide0 h3 {margin-top: 1.5em; font-size: 1.5em;}
+   background: transparent; line-height:1.2;}
+#slide0 h2 {font: bold italic 1em 'Open Sans', Verdana, Geneva, sans-serif; margin: 0.25em 0; color: #333;}
+#slide0 h3 {margin-top: 1.8em; font-size: 1.5em;}
 #slide0 h4 {margin-top: 0; font-size: 1em;}
+#slide0 p {font-size:90%; margin:0 .1em;}
+
+#slide2 p {margin:0;}
 
 ul.urls {list-style: none; display: inline; margin: 0;}
 .urls li {display: inline; margin: 0;}
