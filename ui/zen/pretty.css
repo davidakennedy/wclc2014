@@ -38,7 +38,7 @@ div#footer { border-top: 1px solid #ccc; font-size: 0.5em; font-weight: bold; pa
 div.long {font-size: 0.75em;}
 .slide h1 {position: absolute; top: 0.7em; left: 0; z-index: 1;
   margin: 0; padding: 0.3em 0 0 4.25%; white-space: nowrap;
-  font: bold 150%/1 'Open Sans', Verdana, Geneva, sans-serif; text-transform: capitalize;}
+  font: bold 150%/1 'Open Sans', Verdana, Geneva, sans-serif;}
 .slide h3 {font-size: 130%;}
 .slide p img {vertical-align:middle;}
 h1 abbr {font-variant: small-caps;}
